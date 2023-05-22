@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP|Roboto&display=swap” rel=“stylesheet”>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="container header-inner italic">
+      <div class="header-title"><a href="/" id="header-title">Cresta Design</a></div>
+      <div class="header-navigation">
+        <ul class="navigation-list">
+          <li class="list-item"><a href="/#concept" class="list-item-b">Concept</a></li>
+          <li class="list-item"><a href="/#service" class="list-item-b">Service</a></li>
+          <li class="list-item"><a href="/#works" class="list-item-b">Works</a></li>
+          <li class="list-item"><a href="/#contact" class="list-item-b">Contact</a></li>
+        </ul>
+      </div>
+      <!-- sp -->
+      <div class="header-humberger">
+        <img src="../img/humberger.svg">
+      </div>
+      <!-- sp-modal -->
+      <div class="modal-wrapper">
+        <div class="header-humberger-close">
+          <img src="../img/Path 2.svg">
+          <img src="../img/Path 4.svg">
+        </div>
+        <div class="close-modal">
+          <ul class="modal-list">
+            <li class="modal-list-item"><a href="/#concept" class="list-item-a">Concept</a></li>
+            <li class="modal-list-item"><a href="/#service" class="list-item-a">Service</a></li>
+            <li class="modal-list-item"><a href="/#works" class="list-item-a">Works</a></li>
+            <li class="modal-list-item"><a href="/#contact" class="list-item-a">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- contact first view -->
+  <div class="contact-page-main">
+    <div class="contact-page-top">
+      <div class="contact-page-title">
+        <h2 class="italic">Contact</h2>
+      </div>
+      <h4 class="contact-page-bottom">Contact us</h4>
+    </div>
+
+    <div class="contact-page-form">
+      <form>
+        <p>お問い合わせ内容</p>
+        <div class="contact-type">
+          <label>
+            <input type="checkbox">資料請求
+          </label>
+          <label>
+            <input type="checkbox">お電話でのご相談を希望
+          </label>
+          <label>
+            <input type="checkbox">申し込み
+          </label>
+        </div>
+
+        <label>
+          担当者名
+          <input type="text">
+        </label>
+        <label>
+          電話番号
+          <input type="text">
+        </label>
+        <label>
+          メールアドレス
+          <input type="text">
+        </label>
+        <label>
+          その他
+          <textarea></textarea>
+        </label>
+
+        <div class="btn-wrapper">
+          <button type="submit" class="btn"><a href="/contact">Submit</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <p>&copy;cresta.design all rights reserved</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
