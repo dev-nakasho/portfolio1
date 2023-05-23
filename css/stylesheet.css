@@ -119,8 +119,8 @@ header {
 .first-view {
   background-image: url(../img/fv-bgi_01.png);
   background-size: cover;
+  background-position: center;
   color: #fff;
-  /* height: 752px; */
   animation: slideAnimation 10s infinite;
 }
 
