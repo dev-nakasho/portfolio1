@@ -4,162 +4,132 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap” rel=“stylesheet”>
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <meta name="robots" content="noindex , nofollow">
+  <title>Cresta Design | TOP</title>
+  <!-- reset css -->
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- style sheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
 
   <!-- header -->
-  <header>
-    <div class="container header-inner italic">
-      <div class="header-title"><a href="#" id="header-title">Cresta Design</a></div>
-      <div class="header-navigation">
-        <ul class="navigation-list">
-          <li class="list-item"><a href="#concept" class="list-item-a">Concept</a></li>
-          <li class="list-item"><a href="#service" class="list-item-a">Service</a></li>
-          <li class="list-item"><a href="#works" class="list-item-a">Works</a></li>
-          <li class="list-item"><a href="#contact" class="list-item-a">Contact</a></li>
+  <header id="header">
+    <div class="header-inner">
+      <h1 class="header-title"><a href="/#header">Cresta Design</a></h1>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#concept">Concept</a></li>
+          <li class="nav-item"><a href="#works">Works</a></li>
+          <li class="nav-item"><a href="#service">Service</a></li>
+          <li class="nav-item"><a href="/contact">Contact</a></li>
         </ul>
-      </div>
-      <!-- sp -->
-      <div class="header-humberger">
-        <img src="img/humberger.svg">
-      </div>
-      <!-- sp-modal -->
-      <div class="modal-wrapper">
-        <div class="header-humberger-close">
-          <img src="img/Path 2.svg">
-          <img src="img/Path 4.svg">
-        </div>
-        <div class="close-modal">
-          <ul class="modal-list">
-            <li class="modal-list-item"><a href="#concept" class="list-item-a">Concept</a></li>
-            <li class="modal-list-item"><a href="#service" class="list-item-a">Service</a></li>
-            <li class="modal-list-item"><a href="#works" class="list-item-a">Works</a></li>
-            <li class="modal-list-item"><a href="#contact" class="list-item-a">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+      </nav>
+
+      <!-- humberger menu -->
+      <button class="humberger-btn">
+        <span class="bar bar-top"></span>
+        <span class="bar bar-middle"></span>
+        <span class="bar bar-bottom"></span>
+      </button>
+
     </div>
   </header>
 
-  <!-- main contents -->
-  <div class="main-contents">
+  <!-- main -->
+  <main>
 
     <!-- first view -->
     <div class="first-view">
-      <div class="container first-view-inner">
-        <h1>Design for Smile.</h1>
-        <h2>快適なオフィスをデザインする</h2>
+      <div class="main-copy">
+        <p class="en-copy">Design for Smile.</p>
+        <p class="jp-copy">快適なオフィスを<br class="sp-br">デザインする</p>
       </div>
     </div>
 
     <!-- concept -->
-    <div class="concept" id="concept">
-      <div class="container">
-        <div class="concept-top">
-          <h3 class="italic concept-title">CONCEPT</h3>
-          <p class="concept-phrase">“働きたくなる空間”をデザインすることで<br>人々を幸せにする。</p>
-          <div class="concept-wrapper">
-            <div class="concept-description">
-              <p>私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社CrestaDesignだからこそできる空間デザインを提供させていただきます。</p>
-            </div>
-            <div class="concept-image">
-              <img alt="concept-image" src="img/concept-image.png" >
-            </div>
+    <section class="section-wrapper" id="concept">
+      <h2 class="section-title">CONCEPT</h2>
+      <div class="section-inner">
+        <p class="concept-lead">
+          “働きたくなる空間”をデザインすることで<br class="pc-br">人々を幸せにする。
+        </p>
+        <div class="concept-content">
+          <p class="concept-text">
+            私たちは、オフィスに特化した空間デザイン専門としております。
+            その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。
+            そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。
+          </p>
+          <div class="concept-img-wrapper">
+            <img src="img/concept-image.png" alt="">
           </div>
         </div>
-        <div class="concept-bottom">Our Concept</div>
       </div>
-    </div>
+      <div class="section-bottom text-right text-gray">Our Concept</div>
+    </section>
 
     <!-- works -->
-    <div class="works" id="works">
-      <div class="container">
-        <h3 class="italic works-title">Works</h3>
-        <div class="works-top">
-          <div class="works-list">
-
-            <!-- item1 -->
-            <div class="works-item">
-              <img alt="card-img01" src="img/card-img01.png">
-              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-            </div>
-            <!-- item2 -->
-            <div class="works-item">
-              <img alt="card-img02" src="img/card-img02.png">
-              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-            </div>
-            <!-- item3 -->
-            <div class="works-item">
-              <img alt="card-img03" src="img/card-img03.png">
-              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-            </div>
-          </div>
-          <div class="btn-wrapper">
-            <button class="btn"><a href="#">View more</a></button>
-          </div>
-        </div>
-        <div class="works-bottom">Our Works</div>
-      </div>
-    </div>
+    <section class="section-wrapper bg-works" id="works">
+      <h2 class="section-title text-right text-white">Works</h2>
+      <ul class="works-list">
+        <li class="works-item">
+          <a href="">
+            <div><img src="img/card-img01.png" alt=""></div>
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </a>
+        </li>
+        <li class="works-item">
+          <a href="">
+            <div><img src="img/card-img02.png" alt=""></div>
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </a>
+        </li>
+        <li class="works-item">
+          <a href="">
+            <div><img src="img/card-img03.png" alt=""></div>
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </a>
+        </li>
+      </ul>
+      <a href="" class="link-btn">View more</a>
+      <div class="section-bottom">Our Works</div>
+    </section>
 
     <!-- service -->
-    <div class="service" id="service">
-      <div class="container">
-        <div class="service-top">
-          <h3 class="italic service-title">Service</h3>
-        </div>
-        <div class="service-list">
-
-          <!-- item1 -->
-          <div class="service-item cover-image1">
-            <div class="service-item-title">
-              <h4 class="italic">Hearing</h4>
-            </div>
-          </div>
-          <!-- item2 -->
-          <div class="service-item cover-image2">
-            <div class="service-item-title">
-              <h4 class="italic">Planning</h4>
-            </div>
-          </div>
-          <!-- item3 -->
-          <div class="service-item cover-image3">
-            <div class="service-item-title">
-              <h4 class="italic">Direction</h4>
-            </div>
-          </div>
-        </div>
-        <div class="service-bottom">Our Service</div>
-      </div>
-    </div>
+    <section class="section-wrapper" id="service">
+      <h2 class="section-title">Service</h2>
+      <ul class="service-list">
+        <li class="service-item service1"><a href="">Hearing</a></li>
+        <li class="service-item service2"><a href="">Planning</a></li>
+        <li class="service-item service3"><a href="">Direction</a></li>
+      </ul>
+      <div class="section-bottom text-right text-gray">Our Service</div>
+    </section>
 
     <!-- contact -->
-    <div class="contact" id="contact">
-      <div class="container">
-        <h3 class="italic contact-title">Contact</h3>
-        <div class="contact-top">
-          <div class="contact-wrapper">
-            <p>お気軽にご相談ください。</p>
-            <div class="btn-wrapper">
-              <button class="btn"><a href="/contact">Contact</a></button>
-            </div>
-          </div>
-        </div>
-        <div class="contact-bottom">Contact us</div>
+    <section class="section-wrapper bg-contact">
+      <h2 class="section-title text-right text-white">Contact</h2>
+      <div class="section-inner">
+        <p class="contact-text">お気軽にご相談ください。</p>
+        <a href="/contact" class="link-btn">Contact</a>
       </div>
-    </div>
-  </div>
+      <div class="section-bottom">Contact us</div>
+    </section>
+
+  </main>
 
   <!-- footer -->
-  <footer>
-    <p>&copy;cresta.design all rights reserved</p>
-  </footer>
+  <footer><small>©︎cresta.design all rights reserved</small></footer>
+
+  <!-- jquery -->
   <script src="js/script.js"></script>
 </body>
 </html>

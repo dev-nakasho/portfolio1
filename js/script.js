@@ -1,67 +1,42 @@
 $(function () {
-  // ヘッダーの背景色
+  // ヘッダー背景色の変更をハンドルする
   $(window).scroll(function () {
     var scroll = $(this).scrollTop();
     var firstViewHeight = $(".first-view").height();
-    var contactPageTitleHeight = $(".contact-page-title").height();
+    var contactPageTitleHeight = $(".page-title-wrapper").height();
 
     if (scroll > firstViewHeight || scroll > contactPageTitleHeight) {
-      $("header").addClass("dark");
+      $("header").addClass("bg-dark");
     } else {
-      $("header").removeClass("dark");
+      $("header").removeClass("bg-dark");
     }
   });
 
-  // ページ内リンク
-  $(".list-item-a").click(function () {
+  // ナビゲーションメニューの開閉をハンドルする
+  $(".humberger-btn").click(function () {
+    $(this).toggleClass("close");
+    $(".header-nav").fadeToggle(300);
+    $("body").toggleClass("noscroll");
+  });
+
+  // ナビゲーションからのページ内リンクをハンドルする
+  $(".nav-item a").click(function () {
+    // PC ver.
     var id = $(this).attr("href");
     var position = $(id).offset().top;
+    $("html, body").animate({ scrollTop: position }, 300);
 
-    $("html, body").animate({ scrollTop: position }, 500);
-
-    if ($(".modal-wrapper").css("display") !== "none") {
-      $(".modal-wrapper").css("display", "none");
-      $(".header-humberger").show();
+    // SP ver.
+    if ($(".humberger-btn").css("display") !== "none") {
+      $(".humberger-btn").toggleClass("close");
+      $(".header-nav").fadeToggle(300);
+      $("body").toggleClass("noscroll");
     }
   });
 
-  // ページ内リンク top
-  $("#header-title").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 500);
-  });
-
-  // マウスオーバー
-  $(".cover-image3").hover(
-    function () {
-      $(this).removeClass("cover-image3").addClass("hover-image3");
-    },
-    function () {
-      $(this).removeClass("hover-image3").addClass("cover-image3");
-    }
-  );
-
-  // ハンバーガーメニュー open
-  $(".header-humberger").click(function () {
-    $(".modal-wrapper").css("display", "block");
-    $(this).hide();
-  });
-
-  // ハンバーガーメニュー close
-  $(".header-humberger-close").click(function () {
-    $(".modal-wrapper").css("display", "none");
-    $(".header-humberger").show();
-  });
-
-  // window resize
-  $(window).resize(function () {
-    var width = $(window).width();
-
-    if (width < 1024) {
-      $(".first-view-inner h2").html(
-        "<h2>快適なオフィスを<br>デザインする</h2>"
-      );
-    } else {
-      $(".first-view-inner h2").html("<h2>快適なオフィスをデザインする</h2>");
-    }
+  // ページTOPに対するリンクをハンドルする
+  $(".header-title").click(function () {
+    console.log("called this");
+    $("html, body").animate({ scrollTop: 0 }, 300);
   });
 });

@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/stylesheet.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP|Roboto&display=swap” rel=“stylesheet”>
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <meta name="robots" content="noindex , nofollow">
+  <title>Cresta Design | TOP</title>
+  <!-- reset css -->
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- style sheet -->
+  <link rel="stylesheet" href="../css/contact.css">
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
+
 <body>
+
   <!-- header -->
-  <header>
-    <div class="container header-inner italic">
-      <div class="header-title"><a href="/" id="header-title">Cresta Design</a></div>
-      <div class="header-navigation">
-        <ul class="navigation-list">
-          <li class="list-item"><a href="/#concept" class="list-item-b">Concept</a></li>
-          <li class="list-item"><a href="/#service" class="list-item-b">Service</a></li>
-          <li class="list-item"><a href="/#works" class="list-item-b">Works</a></li>
-          <li class="list-item"><a href="/#contact" class="list-item-b">Contact</a></li>
+  <header id="header">
+    <div class="header-inner">
+      <h1 class="header-title"><a href="/">Cresta Design</a></h1>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/#concept">Concept</a></li>
+          <li class="nav-item"><a href="/#works">Works</a></li>
+          <li class="nav-item"><a href="/#service">Service</a></li>
+          <li class="nav-item"><a href="/contact">Contact</a></li>
         </ul>
-      </div>
-      <!-- sp -->
-      <div class="header-humberger">
-        <img src="../img/humberger.svg">
-      </div>
-      <!-- sp-modal -->
-      <div class="modal-wrapper">
-        <div class="header-humberger-close">
-          <img src="../img/Path 2.svg">
-          <img src="../img/Path 4.svg">
-        </div>
-        <div class="close-modal">
-          <ul class="modal-list">
-            <li class="modal-list-item"><a href="/#concept" class="list-item-a">Concept</a></li>
-            <li class="modal-list-item"><a href="/#service" class="list-item-a">Service</a></li>
-            <li class="modal-list-item"><a href="/#works" class="list-item-a">Works</a></li>
-            <li class="modal-list-item"><a href="/#contact" class="list-item-a">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+      </nav>
+
+      <!-- humberger menu -->
+      <button class="humberger-btn">
+        <span class="bar bar-top"></span>
+        <span class="bar bar-middle"></span>
+        <span class="bar bar-bottom"></span>
+      </button>
+
     </div>
   </header>
 
-  <!-- contact first view -->
-  <div class="contact-page-main">
-    <div class="contact-page-top">
-      <div class="contact-page-title">
-        <h2 class="italic">Contact</h2>
-      </div>
-      <h4 class="contact-page-bottom">Contact us</h4>
+  <!-- main -->
+  <main>
+
+    <!-- page-title -->
+    <div class="page-title-wrapper">
+      <h1 class="page-title">Contact</h1>
+      <div class="page-title-bottom">Contact us</div>
     </div>
 
-    <div class="contact-page-form">
-      <form>
-        <p>お問い合わせ内容</p>
-        <div class="contact-type">
-          <label>
-            <input type="checkbox">資料請求
-          </label>
-          <label>
-            <input type="checkbox">お電話でのご相談を希望
-          </label>
-          <label>
-            <input type="checkbox">申し込み
-          </label>
-        </div>
+    <!-- contact form -->
+    <form action="#" class="form-wrapper">
 
-        <label>
-          担当者名
-          <input type="text">
-        </label>
-        <label>
-          電話番号
-          <input type="text">
-        </label>
-        <label>
-          メールアドレス
-          <input type="text">
-        </label>
-        <label>
-          その他
-          <textarea></textarea>
-        </label>
+      <ul class="form-list">
+        <li class="form-item">
+          <label for="" class="form-label">お問い合わせ内容</label>
+          <ul class="checkbox-list">
+            <li class="checkbox-item">
+              <input type="checkbox" class="checkbox" id="order-document">
+              <label for="order-document">資料請求</label>
+            </li>
+            <li class="checkbox-item">
+              <input type="checkbox" class="checkbox" id="contact-tel">
+              <label for="contact-tel">お電話でのご相談を希望</label>
+            </li>
+            <li class="checkbox-item">
+              <input type="checkbox" class="checkbox" id="order">
+              <label for="order">申し込み</label>
+            </li>
+          </ul>
+        </li>
+        <li class="form-item">
+          <label for="name" class="form-label">担当者名</label>
+          <input type="text" class="input-text" id="name">
+        </li>
+        <li class="form-item">
+          <label for="tel-number" class="form-label">電話番号</label>
+          <input type="text" class="input-text" id="tel-number">
+        </li>
+        <li class="form-item">
+          <label for="mailaddress" class="form-label">メールアドレス</label>
+          <input type="text" class="input-text" id="mailaddress">
+        </li>
+        <li class="form-item">
+          <label for="other-contact" class="form-label">その他</label>
+          <textarea class="textarea" id="other-contact"></textarea>
+        </li>
+      </ul>
 
-        <div class="btn-wrapper">
-          <button type="submit" class="btn"><a href="/contact">Submit</a></button>
-        </div>
-      </form>
-    </div>
-  </div>
+      <!-- submit button -->
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </main>
 
   <!-- footer -->
-  <footer>
-    <p>&copy;cresta.design all rights reserved</p>
-  </footer>
+  <footer><small>©︎cresta.design all rights reserved</small></footer>
 
+  <!-- jquery -->
   <script src="../js/script.js"></script>
 </body>
 
