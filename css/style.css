@@ -179,7 +179,7 @@ button {
 .first-view {
   height: 100vh;
   /* min-height: 550px; */
-  background-image: url("../img/fv-bgi_01.png");
+  background-image: url("../img/fv-bgi_01@2x.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -188,16 +188,16 @@ button {
 
 @keyframes slideAnimation {
   0% {
-    background-image: url('../img/fv-bgi_01.png');
+    background-image: url('../img/fv-bgi_01@2x.jpg');
   }
   33% {
-    background-image: url('../img/fv-bgi_02.png');
+    background-image: url('../img/fv-bgi_02@2x.jpg');
   }
   66% {
-    background-image: url('../img/fv-bgi_03.png');
+    background-image: url('../img/fv-bgi_03@2x.jpg');
   }
   100% {
-    background-image: url('../img/fv-bgi_01.png');
+    background-image: url('../img/fv-bgi_01@2x.jpg');
   }
 }
 
@@ -267,7 +267,7 @@ button {
 /* ------------------------ */
 
 .bg-works {
-  background-image: url("../img/works-bgi.png");
+  background-image: url("../img/works-bgi@2x.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -314,17 +314,17 @@ button {
 }
 
 .service-item.service1 {
-  background-image: url("../img/service-img01.png");
+  background-image: url("../img/service-img01@2x.jpg");
   background-size: cover;
   background-position: center;
 }
 .service-item.service2 {
-  background-image: url("../img/service-img02.png");
+  background-image: url("../img/service-img02@2x.jpg");
   background-size: cover;
   background-position: center;
 }
 .service-item.service3 {
-  background-image: url("../img/service-img03.png");
+  background-image: url("../img/service-img03@2x.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -352,7 +352,7 @@ button {
 /* ------------------------ */
 
 .bg-contact {
-  background-image: url("../img/contact-page-bgi.png");
+  background-image: url("../img/contact-page-bgi@2x.jpg");
   background-size: cover;
   background-position: center;
 }
